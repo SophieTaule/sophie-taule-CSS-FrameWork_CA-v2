@@ -1,0 +1,38 @@
+
+.nav-tabs {
+	display:none;
+	a {
+		color: @pink-color;
+		&:hover {
+			color: @dark-pink;
+		}
+	}
+}
+.tab-content {
+	padding: 20px;
+}
+.showcase {
+	font-family: @header-text;
+	padding: 20px;
+}
+.showcase__info {
+	float: left;
+	font-family: @body-text;
+	font-size: @font-size-text;
+}
+.showcase__info--text {
+	p {
+		float: right;
+		font-family: @body-text;
+		font-size: @font-size-text;
+	}
+}
+@media(min-width: 800px) {
+		.nav-tabs { display: flex;
+	}
+}
+@media(max-width: 800px) {
+		.tab-content > .tab-pane { display: block;
+		opacity: 1;
+	}
+}

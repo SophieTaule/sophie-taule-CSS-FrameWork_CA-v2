@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Serif&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <title>The YAY Company</title>
+    </head>
+
+    <body>
+
+        <!-- Navbar-->
+        <nav class="navbar navbar-default">
+            <!-- navbar-default for white background-->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapsemenu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">The YAY Company</a>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="collapsemenu">
+                    <!--collapse navbar-->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">HOME</a></li>
+                        <!-- active to show wich page you are on-->
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                    <!-- Search input-->
+                    <div class="col-sm-3 col-md-3 pull-right">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." name="srch-term"
+                                    id="srch-term">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i
+                                            class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </nav>
+
+
+
+
+
+
+
+        <!--Carousel -->
+        <div class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators dots-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/carousel/carousel-1.jpg" alt="Los Angeles" style="width:100%;">
+                        <div class="carousel-caption">
+                            <!--add text to picture here-->
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/carousel/carousel-2.jpg" alt="Chicago" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/carousel/carousel-3.jpg" alt="New York" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- SHOWCASE TEXT-->
+        <div class="content container">
+            <!--- added container class to add some padding from the nav-->
+            <div class="row">
+                <section class="col-xs-12">
+                    <h1 class="showcase">We do YAY things</h1>
+                    <p class="showcase__info">Cras consectetur viverra vestibulum. Proin sollicitudin, sem quis pulvinar
+                        hendrerit,
+                        risus augue tincidunt tortor, sed faucibus erat elit sed nulla. Donec fringilla tortor
+                        at gravida tempor.
+                        fringilla tortor at gravida tempor. </p>
+                </section>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--   TABS-->
+
+        <div class="container showcase">
+
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="nulliam-tab" data-toggle="tab" href="#nulliam" role="tab"
+                        aria-controls="NULLIAM" aria-selected="true">NULLIAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="suspendisse-tab" data-toggle="tab" href="#suspendisse" role="tab"
+                        aria-controls="SUSPENDISSE" aria-selected="false">SUSPENDISSE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="eleifend-tab" data-toggle="tab" href="#eleifend" role="tab"
+                        aria-controls="eleifend" aria-selected="false">ELEIFEND</a>
+                </li>
+            </ul>
+
+            <!-- TAB  - nulliam content -->
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade active" id="nulliam" role="tabpanel" aria-labelledby="nulliam-tab">
+
+                    <img class="col-xs-12 col-sm-6 showcase__info" src="images/tabs/tab-1.jpg" alt="nulliam">
+                    <h2 class="col-xs-12 col-sm-6 showcase__info--text pull-right">Diam ipusm luctus</h2>
+                    <p>
+                        Morbi nec turpis vehicula, blandit nulla vitae, fermentum ex. Sed auctor tellus vel tempor
+                        imperdiet.
+                        Nullam suscipit libero ut purus congue suscipit. Quisque congue libero vitae suscipit bibendum.
+                        Ut lobortis et nisi sit amet placerat. Maecenas posuere tempor ipsum in tempus. Donec dictum
+                        vulputate semper.
+                    </p>
+                </div>
+                <!-- TAB  - suspendisse content -->
+                <div class="tab-pane fade" id="suspendisse" role="tabpanel" aria-labelledby="suspendisse-tab">
+                    <img class="col-xs-12 col-sm-6 showcase__info" src="images/tabs/tab-2.jpg" alt="nulliam">
+                    <h2 class="col-xs-12 col-sm-6 showcase__info--text pull-right">Diam ipusm luctus</h2>
+                    <p>
+                        Suspendisse dictum quis lacus eget rutrum. Suspendisse eu semper mi.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
+                    </p>
+                </div>
+                <!-- TAB  - eleifend content -->
+                <div class="tab-pane fade" id="eleifend" role="tabpanel" aria-labelledby="eleifend-tab">
+                    <img class="col-xs-12 col-sm-6 showcase__info" src="images/tabs/tab-3.jpg" alt="nulliam">
+                    <h2 class="col-xs-12 col-sm-6 showcase__info--text pull-right">Diam ipusm luctus</h2>
+                    <p>
+                        Mauris ut eleifend erat. Praesent facilisis enim et ultrices placerat. Donec et urna fermentum,
+                        fermentum enim sit amet, dignissim enim. Nulla sit amet turpis ac lacus placerat aliquet.
+                        Aliquam sit amet hendrerit dolor. Vestibulum imperdiet lacus non lectus suscipit molestie.
+                        Vivamus vitae congue quam, a facilisis neque.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="container-fluid">
+            <div class="row">
+
+
+                <!-- Sosical icons -->
+                <ul class="footer__icon">
+                    <i> <a href="#"><img src="images/social/facebook.svg" width="40px"></a></i>
+                    <i> <a href="#"><img src="images/social/twitter.svg" width="40px"></a></i>
+                    <i> <a href="#"><img src="images/social/android.svg" width="40px"></a></i>
+                    <i> <a href="#"><img src="images/social/apple.svg" width="40px"></a></i>
+                </ul>
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: YAY 2019
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="script/jquery3.4.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

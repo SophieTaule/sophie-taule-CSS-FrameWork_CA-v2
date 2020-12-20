@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>YAY - Contact</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar-->
+    <nav class="navbar navbar-default">
+      <!-- navbar-default for white background-->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">The YAY Company</a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="collapsemenu">
+          <!--collapse navbar-->
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">HOME</a></li> <!-- active to show wich page you are on-->
+            <li><a href="news.html">NEWS</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></liclass="active">
+          </ul>
+
+
+          <!-- Search input-->
+          <div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search..." name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+
+
+
+          </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+      <h1 class="header">Contact</h1>
+    </div>
+
+
+    <!--  CONTACT FORM -->
+
+
+
+
+    <div class="container content">
+      <div class="row">
+        <section class="col-xs-12 col-sm-6 contact">
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input class="form-control" type="text" id="inputName" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input class="form-control" type="email" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input class="form-control" type="text" id="inputPhonenr" placeholder="Phone">
+                </div>
+              </div>
+
+
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <textarea class="form-control" id="inputComments" placeholder="Message"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="submit" class="btn btn-primary pull-right" value="SEND">
+                </div>
+              </div>
+
+            </form>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- SERVICES  TABLE -->
+
+
+        <section class="col-xs-12 col-sm-6">
+          <table class="table table-hover">
+
+            <h2 class="sub__header">Services</h2>
+            <thead>
+            <tbody>
+              <tr>
+                <!--<th scope="row">1</th>-->
+                <td>Nulla ut dignissim ipsum.</td>
+
+              </tr>
+              <tr>
+                <td>Pellentesque tellus tortor</td>
+              </tr>
+              <tr>
+                <td colspan="2">tincidunt sagittis</td>
+              </tr>
+              <tr>
+                <td>Nulla ut dignissim ipsum.</td>
+              </tr>
+              <tr>
+                <td>Ornare et neque vitae</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+        </section>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="row">
+
+
+        <!-- Sosical icons -->
+        <ul class="footer__icon">
+          <i> <a href="#"><img src="images/social/facebook.svg" width="40px"></a></i>
+          <i> <a href="#"><img src="images/social/twitter.svg" width="40px"></a></i>
+          <i> <a href="#"><img src="images/social/android.svg" width="40px"></a></i>
+          <i> <a href="#"><img src="images/social/apple.svg" width="40px"></a></i>
+        </ul>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: YAY 2019
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/jquery3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

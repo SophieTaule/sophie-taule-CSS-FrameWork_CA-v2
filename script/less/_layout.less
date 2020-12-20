@@ -1,0 +1,116 @@
+
+.h1 {
+  font-size: @font-header-size;
+}
+
+.h2 {
+	font-size: @font-sub-head-size;
+}
+
+body {
+	font-family: @body-text;
+	font-size: @font-size-text;
+	margin-bottom: 300px;
+}
+.header {
+	font-family: @header-text;
+	font-size: @font-header-size;
+}
+.sub__header {
+	font-family: @header-text;
+	font-size: @font-sub-head-size;
+}
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-default {
+	background-color: @grey-color;
+	border: none;
+	box-shadow: 0 8px 6px -6px rgb(70, 70, 70);
+	.navbar-brand {
+		color: @pink-color;
+		font-family: @header-text;
+		font-size: @font-size-logo;
+		font-style: italic;
+		font-weight: bold;
+		padding-left: 30px;
+		&:hover {
+			color: @pink-color;
+		}
+	}
+	.navbar-nav>.active>a {
+		background-color: @light-color;
+		box-shadow: 0 8px 6px -6px rgb(70, 70, 70);
+		font-size: @font-size-menu;
+		&:focus {
+			background-color: @light-color;
+			box-shadow: 0 8px 6px -6px rgb(70, 70, 70);
+			font-size: @font-size-menu;
+		}
+		&:hover {
+			background-color: @light-color;
+			box-shadow: 0 8px 6px -6px rgb(70, 70, 70);
+			font-size: @font-size-menu;
+		}
+	}
+	.navbar-nav>li> {
+		font-size: @font-size-menu;
+	}
+	.navbar-nav>li>a {
+		&:hover {
+			color: @dark-pink;
+		}
+	}
+}
+.navbar-nav>li>a {
+	text-align: center;
+}
+.navbar-form {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.form-control {
+	font-size: @font-size-text;
+}
+.search {
+	width: 80%;
+}
+.btn-primary {
+	background-color: var(--clr-pink);
+	border-color: var(--clr-pink);
+	font-size: @font-size-buttons;
+	padding: 6px 40px;
+	&:hover {
+		background-color: var(--clr-dark-pink);
+		border-color: var(--clr-pink);
+	}
+}
+.btn-default {
+	background-color: var(--clr-pink);
+	border-color: var(--clr-pink);
+	color: @light-color;
+	font-size: @font-size-buttons;
+	&:hover {
+		background-color: var(--clr-dark-pink);
+		border-color: var(--clr-pink);
+	}
+}
+footer {
+	background-color: @grey-color;
+	bottom: 0;
+	font-size: @font-size-footer;
+	height: 100px;
+	padding-top: 20px;
+	position: fixed;
+	width: 100%;
+}
+.footer__icon {
+	text-align: center;
+}
